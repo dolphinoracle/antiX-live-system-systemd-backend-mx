@@ -1,0 +1,10 @@
+Source: antix-live-system-systemd-backend-mx
+Section: system
+Priority: optional
+Maintainer: dolphin oracle <dolphinoracle@gmail.com>
+Build-Depends: debhelper (>=9)
+Standards-Version: 3.9.8
+
+Package: antix-live-system-systemd-backend-mx
+Architecture: all
+Description: Package of unit services for certain antiX-live functions.

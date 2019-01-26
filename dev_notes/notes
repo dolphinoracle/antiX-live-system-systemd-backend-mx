@@ -1,0 +1,31 @@
+--not correct but left for future reference - remove wpasupplicant service files from /etc/systemd/system
+
+
+wpa_supplicant - disable wpa_supplicant@ services and mask them, try leaving the wpa_supplicant dbus version,needed for wireless
+
+persist-autosave - run before umount.target, wanted_by by multi-user.target seems to have decent results. 
+live-usb-save - - run before umount.target, wanted_by by multi-user.target seems to have decent results. 
+live-static-shutdown - run before umount.target, wanted_by by multi-user.target seems to have decent results. -
+
+need to add similar live-usb scripts for live-static-shutdown and live-usb-save
+
+**live scripts no in new antix-live-system-systemd-backend package
+
+
+take a look at at systemd-inhibit to stop actions until an action is complete.  might be useful for the live system (not needed at the moment 1-19-2019)
+
+need to remove the systemd-time-wait-sync symlink in /etc/systemd/system/sysinit.wants so that live system finishes boot.  
+important since we don't actually change the system clock on live.  need to replace on installed system (live-to-installed modification).
+need to remove systemd-networkd-wait-online as well...network-manager takes care of this later.
+
+!!!need a function in installed-to-live for the live-USB system symlinks to /etc/systemd/system/multi-user.target.wants (persist-autosave, live-usb-save, and live-static-shutdown).
+
+need to look at disabling plymouth on live, and restoring on installed. (bookend entries in installed-to-live and live-to-installed)
+
+
+!!!also need a rc.local service file
+
+**note that rc.local is being processed but orage-clock is starting before the file is written to so wrong time is displayed.
+
+**now in the antix-live-system-systemd-backend package
+
