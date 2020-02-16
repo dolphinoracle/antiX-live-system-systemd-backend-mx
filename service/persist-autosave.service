@@ -1,7 +1,7 @@
 [Unit]
 Description=antiX live-USB persist autosave at shutdown
-Before=umount.target
-ConditionPathExists=/live/boot-dev
+After=umount.target
+ConditionPathExists=/live/linux
 RequiresMountsFor=/ /live
 
 [Service]

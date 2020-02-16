@@ -6,5 +6,6 @@ Build-Depends: debhelper (>=9)
 Standards-Version: 3.9.8
 
 Package: antix-live-system-systemd-backend-mx
+Depends: init-system-helpers, systemd
 Architecture: all
 Description: Package of unit services for certain antiX-live functions.

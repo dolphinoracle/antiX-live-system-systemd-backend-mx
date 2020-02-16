@@ -3,10 +3,9 @@ Description=save system clock if not running live
 Before=umount.target
 
 [Service]
-ExecStart=/bin/true
+ExecStart=/etc/init.d/hwclock.sh start
 ExecStop=/etc/init.d/hwclock.sh stop
-Type=oneshot
 RemainAfterExit=yes
 
 [Install]
-WantedBy=multi-user.target
+WantedBy=sysinit.target
