@@ -1,0 +1,25 @@
+#!/bin/sh
+set -e
+
+if [ -d /run/systemd/system ]; then
+	systemctl --system daemon-reload >/dev/null || true
+fi
+
+if [ "$1" = "remove" ]; then
+	if [ -x "/usr/bin/deb-systemd-helper" ]; then
+		deb-systemd-helper mask 'live-broadcomstartup.service' >/dev/null || true
+		deb-systemd-helper mask 'live-clock12or24.service' >/dev/null || true
+		deb-systemd-helper mask 'live-swap.service' >/dev/null || true
+	fi
+fi
+
+if [ "$1" = "purge" ]; then
+	if [ -x "/usr/bin/deb-systemd-helper" ]; then
+		deb-systemd-helper purge 'live-broadcomstartup.service' >/dev/null || true
+		deb-systemd-helper unmask 'live-broadcomstartup.service' >/dev/null || true
+		deb-systemd-helper purge 'live-clock12or24.service' >/dev/null || true
+		deb-systemd-helper unmask 'live-clock12or24.service' >/dev/null || true
+		deb-systemd-helper purge 'live-swap.service' >/dev/null || true
+		deb-systemd-helper unmask 'live-swap.service' >/dev/null || true
+	fi
+fi

@@ -1,0 +1,31 @@
+#!/bin/sh
+set -e
+
+if [ -d /run/systemd/system ]; then
+	systemctl --system daemon-reload >/dev/null || true
+fi
+
+if [ "$1" = "remove" ]; then
+	if [ -x "/usr/bin/deb-systemd-helper" ]; then
+		deb-systemd-helper mask 'live-usb-save.service' >/dev/null || true
+		deb-systemd-helper mask 'persist-autosave.service' >/dev/null || true
+		deb-systemd-helper mask 'live-static-shutdown.service' >/dev/null || true
+		#deb-systemd-helper disable 'rc-local.service' >/dev/null || true
+		deb-systemd-helper mask 'hwclock-mx.service' >/dev/null || true
+	fi
+fi
+
+if [ "$1" = "purge" ]; then
+	if [ -x "/usr/bin/deb-systemd-helper" ]; then
+		deb-systemd-helper purge 'live-usb-save.service' >/dev/null || true
+		deb-systemd-helper unmask 'live-usb-save.service' >/dev/null || true
+		deb-systemd-helper purge 'persist-autosave.service' >/dev/null || true
+		deb-systemd-helper unmask 'persist-autosave.service' >/dev/null || true
+		deb-systemd-helper purge 'live-static-shutdown.service' >/dev/null || true
+		deb-systemd-helper unmask 'live-static-shutdown.service' >/dev/null || true
+		deb-systemd-helper purge 'hwclock-mx.service' >/dev/null || true
+		deb-systemd-helper unmask 'hwclock-mx.service' >/dev/null || true
+		#deb-systemd-helper disable 'rc-local.service' >/dev/null ||true
+		#rm /etc/systemd/system/rc-local.service >/dev/null ||true
+	fi
+fi

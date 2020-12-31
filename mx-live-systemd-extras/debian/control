@@ -1,0 +1,11 @@
+Source: mx-live-systemd-extras
+Section: system
+Priority: optional
+Maintainer: dolphin oracle <dolphinoracle@gmail.com>
+Build-Depends: debhelper (>=9)
+Standards-Version: 3.9.8
+
+Package: mx-live-systemd-extras
+Depends: init-system-helpers, systemd
+Architecture: all
+Description: Package of unit services for certain antiX-live functions.
