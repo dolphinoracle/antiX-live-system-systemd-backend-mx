@@ -1,0 +1,31 @@
+Format: 1.8
+Date: Mon, 09 Mar 2020 22:57:12 -0500
+Source: mx-live-systemd-extras
+Binary: mx-live-systemd-extras
+Architecture: source all
+Version: 20.03.01
+Distribution: mx
+Urgency: medium
+Maintainer: dolphin oracle <dolphinoracle@gmail.com>
+Changed-By: Dolphin Oracle <dolphinoracle@gmail.com>
+Description:
+ mx-live-systemd-extras - Package of unit services for certain antiX-live functions.
+Changes:
+ mx-live-systemd-extras (20.03.01) mx; urgency=medium
+ .
+   * initial build
+Checksums-Sha1:
+ 9e3a49603c05025dc0b7d12c00971aa08401399f 605 mx-live-systemd-extras_20.03.01.dsc
+ ac9f41a1dc8200ab3b494307984ce5d5684f7d7b 17409 mx-live-systemd-extras_20.03.01.tar.gz
+ fd42f18389c7b93d0fa10a1fecbcae2b60bc2d78 16736 mx-live-systemd-extras_20.03.01_all.deb
+ 340aa92fca069abc7d6d4211ffae15e3278462b3 4786 mx-live-systemd-extras_20.03.01_amd64.buildinfo
+Checksums-Sha256:
+ f41ed000fe5cb5906832f7eeb25fde184ad70a600e8b8232926815199f4ff821 605 mx-live-systemd-extras_20.03.01.dsc
+ 8edcdd1d5eef8b8de9ef4909f5a71dce8f5d69864c764b02b210a8be82c06f30 17409 mx-live-systemd-extras_20.03.01.tar.gz
+ 8bbac4736e04198d69472c8de52962acd03f31f97597c470b3d908db0d6c45a9 16736 mx-live-systemd-extras_20.03.01_all.deb
+ 2997b8caf8e82a0a13ab3dc9193855dd21e2fb67b0bf634ed978d1d9508c4c26 4786 mx-live-systemd-extras_20.03.01_amd64.buildinfo
+Files:
+ d40094b4f1e558711c79be98a76c0d82 605 system optional mx-live-systemd-extras_20.03.01.dsc
+ 31115c87a608f98289c791793f99b6b1 17409 system optional mx-live-systemd-extras_20.03.01.tar.gz
+ ab47eb4092b33fb50eaa0c7693746a27 16736 system optional mx-live-systemd-extras_20.03.01_all.deb
+ 9761fbe6be769b65716856db41e8f380 4786 system optional mx-live-systemd-extras_20.03.01_amd64.buildinfo

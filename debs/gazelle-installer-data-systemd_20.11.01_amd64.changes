@@ -1,0 +1,31 @@
+Format: 1.8
+Date: Fri, 27 Nov 2020 14:20:19 -0500
+Source: gazelle-installer-data-systemd
+Binary: gazelle-installer-data-mx-systemd
+Architecture: source all
+Version: 20.11.01
+Distribution: mx
+Urgency: medium
+Maintainer: dolphin oracle  <dolphinoracle@gmail.com>
+Changed-By: Dolphin Oracle <dolphinoracle@gmail.com>
+Description:
+ gazelle-installer-data-mx-systemd - Branding and installer.conf data for gazelle-installer
+Changes:
+ gazelle-installer-data-systemd (20.11.01) mx; urgency=medium
+ .
+   * remove installer gazelle.lnk idesk link (mx-fluxbox)
+Checksums-Sha1:
+ 746b952122e4840cdb32d509be2d9ae7a5cf2d56 746 gazelle-installer-data-systemd_20.11.01.dsc
+ b3f2552da9001949ef5a0c8d8a1780190999d4c3 210260 gazelle-installer-data-systemd_20.11.01.tar.xz
+ b4da73336a91798fe59c457de09213dbc5571e1c 200052 gazelle-installer-data-mx-systemd_20.11.01_all.deb
+ acd3263f228eacec63a16f7b4b7fd052e84ca8a7 4865 gazelle-installer-data-systemd_20.11.01_amd64.buildinfo
+Checksums-Sha256:
+ b0224f752113ec12e789d709a40e8f960401692dbbdbd4e7bdb56395e7820722 746 gazelle-installer-data-systemd_20.11.01.dsc
+ 74478e79538cc28bbc152c608283752c663a310d90164731ee9b2eb75c012543 210260 gazelle-installer-data-systemd_20.11.01.tar.xz
+ afed2b7ac58bea3fd036bbe8c19b9847e55e0dfe3f670bfceb3ffe2dc9b9ab56 200052 gazelle-installer-data-mx-systemd_20.11.01_all.deb
+ 0adac12d1505927b626e3d3c3f02be3a1f0803d0d085906b61a0aa7b23009aef 4865 gazelle-installer-data-systemd_20.11.01_amd64.buildinfo
+Files:
+ 64a80ebd3cb12aed14e00252f6b74019 746 admin optional gazelle-installer-data-systemd_20.11.01.dsc
+ 33b007a2557dcd680fc0b8b13638f03c 210260 admin optional gazelle-installer-data-systemd_20.11.01.tar.xz
+ c88a518947a834a6c57bb6a316a6d2e2 200052 admin optional gazelle-installer-data-mx-systemd_20.11.01_all.deb
+ 9e3710b40e9273bd418253331dffdb36 4865 admin optional gazelle-installer-data-systemd_20.11.01_amd64.buildinfo

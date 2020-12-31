@@ -1,0 +1,31 @@
+Format: 1.8
+Date: Sat, 24 Oct 2020 19:32:16 -0400
+Source: antix-live-system-systemd-backend-mx
+Binary: antix-live-system-systemd-backend-mx
+Architecture: source all
+Version: 20.10.01
+Distribution: mx
+Urgency: medium
+Maintainer: dolphin oracle <dolphinoracle@gmail.com>
+Changed-By: Dolphin Oracle <dolphinoracle@gmail.com>
+Description:
+ antix-live-system-systemd-backend-mx - Package of unit services for certain antiX-live functions.
+Changes:
+ antix-live-system-systemd-backend-mx (20.10.01) mx; urgency=medium
+ .
+   * remove rc.local override
+Checksums-Sha1:
+ 8d1edc7041ea13b0dd2227ff50bbde96132ca223 689 antix-live-system-systemd-backend-mx_20.10.01.dsc
+ 3a6363e3f50f098341fa4f0f4fd81b7a9bce9e7d 18853 antix-live-system-systemd-backend-mx_20.10.01.tar.gz
+ e44aba36dcb0a7f23646a339e0667de8fec17302 17452 antix-live-system-systemd-backend-mx_20.10.01_all.deb
+ ab099095aaf7ed518b2c8532b94b16a77bae4d21 4898 antix-live-system-systemd-backend-mx_20.10.01_amd64.buildinfo
+Checksums-Sha256:
+ 7e6248499b306cca4ccfb099cad8628c5583de9ef0116221ad0cccf7f55bc7ea 689 antix-live-system-systemd-backend-mx_20.10.01.dsc
+ 85b099d9ef0c15fce93dde7b3cc0aeccacb60149745c399e695a3ba04c7d9d87 18853 antix-live-system-systemd-backend-mx_20.10.01.tar.gz
+ dfa1726466cb2851e6cced6cafc4476f7e66bf05d1dc10b02b962cc66ffe5d92 17452 antix-live-system-systemd-backend-mx_20.10.01_all.deb
+ befa209c848401ea6864d7053f0ff9cb1f4d1f59ecc343a7c917206fab808176 4898 antix-live-system-systemd-backend-mx_20.10.01_amd64.buildinfo
+Files:
+ ea31582e2bde82dd1d2fcb72f2c4ed93 689 system optional antix-live-system-systemd-backend-mx_20.10.01.dsc
+ e4fcb08b991ae42de8e5cb080a4bcf76 18853 system optional antix-live-system-systemd-backend-mx_20.10.01.tar.gz
+ d6fd13952e96d389388358ec6e29b980 17452 system optional antix-live-system-systemd-backend-mx_20.10.01_all.deb
+ 12f284f7c8669025ea1c14d86bb2505e 4898 system optional antix-live-system-systemd-backend-mx_20.10.01_amd64.buildinfo
