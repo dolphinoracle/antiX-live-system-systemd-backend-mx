@@ -1,4 +1,71 @@
-mx-remaster-systemd (20.11.01) mx; urgency=medium
+mx-remaster-systemd (21.10.02mx21) mx; urgency=medium
+
+  * update live-grubsave
+  * generate machine-id with /etc/rc.local
+
+ -- fehlix <fehlix@mxlinux.org>  Mon, 11 Oct 2021 13:22:47 +0000
+
+mx-remaster-systemd (21.10.01mx21) mx; urgency=medium
+
+  * remove default keyboard  
+
+ -- Dolphin Oracle <dolphinoracle@gmail.com>  Thu, 07 Oct 2021 23:19:56 -0400
+
+mx-remaster-systemd (21.09.01mx21) mx; urgency=medium
+
+  * move some default files around
+
+ -- Dolphin Oracle <dolphinoracle@gmail.com>  Thu, 23 Sep 2021 23:06:15 -0400
+
+mx-remaster-systemd (21.08.01mx21) mx; urgency=medium
+
+  * update live-grubsave features (fehlix) 
+
+ -- Dolphin Oracle <dolphinoracle@gmail.com>  Wed, 25 Aug 2021 18:43:34 -0400
+
+mx-remaster-systemd (21.07.01mx21) mx; urgency=medium
+
+  * update live-grubsave (fehlix)
+
+ -- Dolphin Oracle <dolphinoracle@gmail.com>  Sat, 17 Jul 2021 21:40:34 -0400
+
+mx-remaster-systemd (21.06.01mx21) mx; urgency=medium
+
+  * update to latest init scripts, live-grubsave 
+
+ -- Dolphin Oracle <dolphinoracle@gmail.com>  Mon, 28 Jun 2021 20:30:43 -0400
+
+mx-remaster-systemd (21.04.03mx21) mx; urgency=medium
+
+  * rt kernel changes 
+
+ -- Dolphin Oracle <dolphinoracle@gmail.com>  Sat, 10 Apr 2021 16:24:06 -0400
+
+mx-remaster-systemd (21.04.02mx21) mx; urgency=medium
+
+  * update live uefi files again 
+
+ -- Dolphin Oracle <dolphinoracle@gmail.com>  Thu, 08 Apr 2021 18:22:43 -0400
+
+mx-remaster-systemd (21.04.01mx21) mx; urgency=medium
+
+  * updating live uefi files
+
+ -- Dolphin Oracle <dolphinoracle@gmail.com>  Fri, 02 Apr 2021 20:19:09 -0400
+
+mx-remaster-systemd (21.03.01mx21) mx; urgency=medium
+
+  * move live files out of script into package 
+
+ -- Dolphin Oracle <dolphinoracle@gmail.com>  Sat, 13 Mar 2021 12:37:39 -0500
+
+mx-remaster-systemd (20.12.01) mx; urgency=medium
+
+  * add "whois" as a depend, localize-repo as a recommend 
+
+ -- Dolphin Oracle <dolphinoracle@gmail.com>  Mon, 28 Dec 2020 16:08:07 -0500
+ 
+ mx-remaster-systemd (20.11.01) mx; urgency=medium
 
   * pick up installer idesk link file
 

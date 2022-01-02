@@ -32,7 +32,7 @@ BLURB="
     1) [b]$_Automatic_[/] ($(gt "at shutdown/reboot, no asking"))
     2) [b]$_Semi_Automatic_[/] ($(gt "ask at shutdown/reboot"))
     3) [b]$_Manual_[/] ($(gt "you snooze, you lose"))"
-
+    
 if [ -e /live/config/systemd ]; then
     BLURB="
     $(gt "Configure root persistence saves to run either:")
@@ -109,19 +109,6 @@ edit_config() {
     fi
 
     fmt="[fixed][b]%15s:[/][/] %s   "
-    
-    if [ -e /live/config/systemd ]; then
-        combo_box save-mode "1 $_Automatic_!3 $_Manual_!4 $_Quit_" -n \
-        "$TITLE" ""                                                    \
-        "Please choose auto-save mode."                                \
-        ""                                                             \
-        "$mode_str"                                                    \
-        ""                                                             \
-        "$(pf "$fmt" "$_Automatic_"      "`gt "save on shutdown/reboot automatically.  No asking."`")"   \
-        "$(pf "$fmt" "$_Manual_"         "`gt "only save changes manually (you snooze, you lose)."`")"   \
-        "$(pf "$fmt" "$_Quit_"           "`gt "use current default."`")"                                 \
-        ""
-    else
     combo_box save-mode "1 $_Automatic_!2 $_Semi_Automatic_!3 $_Manual_!4 $_Quit_" -n \
         "$TITLE" ""                                                    \
         "$(gt "Please choose auto-save mode.")"                                \
@@ -133,8 +120,7 @@ edit_config() {
         "$(pf "$fmt" "$_Manual_"         "`gt "only save changes manually (you snooze, you lose)."`")"   \
         "$(pf "$fmt" "$_Quit_"           "`gt "use current default."`")"                                 \
         ""
-    fi
-    
+
     AUTOSAVE_MODE=$UI_RESULT
 
     [ -z "${AUTOSAVE_MODE##4*}" ] && exit
